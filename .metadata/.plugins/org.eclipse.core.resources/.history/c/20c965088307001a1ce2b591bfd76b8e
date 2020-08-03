@@ -1,0 +1,15 @@
+package com.HackerRank;
+
+public class LongestSubString {
+
+	public static void main(String[] args) {
+		//longest substring without repeating its characters.
+		String s="abcdaab";
+		for(int i=0;i<s.length();i++)
+		{
+			while(s.charAt(i))
+		}
+        
+	}
+
+}

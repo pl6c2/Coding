@@ -1,0 +1,18 @@
+package com.Strings;
+
+public class Trash {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s1="Bob hit a ball, the hit ball flew far after it was hit,!@#$ !";
+		
+		System.out.println(s1.toLowerCase());
+		String s2=s1.replaceAll("[^a-zA-Z0-9]", "");
+		String[] a=s2.split(" ");
+		System.out.println(a.length+ " " );
+		
+		
+	}
+
+}

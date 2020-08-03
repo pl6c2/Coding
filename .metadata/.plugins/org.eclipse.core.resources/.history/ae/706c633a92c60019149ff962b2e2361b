@@ -1,0 +1,29 @@
+package trash;
+
+import java.text.DecimalFormat;
+
+class Tr 
+{
+	void funtr()
+	{
+		System.out.println("In parent");
+	}
+}
+
+public class Trash extends Tr{
+	int i;
+	public void base()
+	{
+		System.out.println("base class");
+	}
+
+	public static void main(String[] args) {
+		
+		Tr t = new Trash();
+		
+
+	}
+
+}
+
+

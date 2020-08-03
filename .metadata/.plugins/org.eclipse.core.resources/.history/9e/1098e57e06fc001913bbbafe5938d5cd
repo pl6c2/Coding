@@ -1,0 +1,23 @@
+package com.trash;
+
+public class Trash {
+	
+	static String beautifulDays() {
+	     
+		if(1>0)
+		{
+			System.out.println("IDF");
+		}
+
+		else
+		{
+			return "NO";
+		}
+	    }
+
+	public static void main(String[] args) {
+		beautifulDays();
+
+	}
+
+}

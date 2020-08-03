@@ -1,0 +1,11 @@
+package com.Strings;
+
+public class Palindrome {
+
+	public static void main(String args[])
+	{
+		String a="A man, a plan, a canal: Panama";
+		String a1=a.replaceAll("[^a-zA-Z0-9]", " ").replace("  ", " ").toLowerCase();
+		System.out.println(a1);
+	}
+}

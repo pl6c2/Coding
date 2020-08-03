@@ -1,0 +1,30 @@
+package com.twitterProducer;
+
+import java.util.concurrent.BlockingQueue;
+
+public class TwitterProducer {
+	
+	public TwitterProducer()
+	{
+		
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Hello");
+		new TwitterProducer().run();
+
+	}
+	
+	public void run()
+	{
+		
+	}
+	
+	public void createtwitterClient()
+	{
+		
+		BlockingQueue<String> msgQueue = new LinkedBlockingQueue<String>(100000);
+		
+	}
+
+}

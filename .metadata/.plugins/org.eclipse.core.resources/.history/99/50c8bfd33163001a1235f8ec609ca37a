@@ -1,0 +1,29 @@
+package trash;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Trash3 {
+
+	public static void main(String args[])
+	{
+		StringBuilder s=new StringBuilder("anagram");
+		StringBuilder t=new StringBuilder("nagaram");
+		for(int i=0;i<s.length();i++)
+		{
+			for(int j=0;j<t.length();j++)
+			{
+				if(s.charAt(i)==t.charAt(j))
+				{
+					t.deleteCharAt(j);
+				}
+			}
+		}
+		
+		System.out.println(t.length());
+		
+		
+		 
+	}
+}
+

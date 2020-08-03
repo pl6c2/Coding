@@ -1,0 +1,50 @@
+package trash;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.Stack;
+import java.util.TreeMap;
+
+public class Trash1 {
+
+	public static void main(String args[])
+	{
+		String s="ababcbacadefegdehijhklij";
+		List<Integer> l=new ArrayList<>();
+		int[] place=new int[26];
+		for(int i=0;i<s.length();i++)
+		{
+			place[s.charAt(i)-'a']=i;
+		}
+		
+		int index=0;
+		while(index<s.length())
+		{
+			int firstplace=place[s.charAt(index)-'a'];
+			int innerindex=index;
+			while(innerindex<firstplace)
+			{
+				if(place[s.charAt(innerindex)] > firstplace)
+				{
+					firstplace=place[s.charAt(innerindex)-'a'];
+				}
+//				 firstplace= Math.max(firstplace, place[s.charAt(innerindex)-'a']);
+				innerindex++;
+			}
+			l.add(innerindex-index+1);
+			index=innerindex+1;
+		}
+		
+		System.out.println(l);
+	}
+}
+
+
+  

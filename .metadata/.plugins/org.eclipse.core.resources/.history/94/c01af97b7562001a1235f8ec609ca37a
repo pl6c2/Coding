@@ -1,0 +1,17 @@
+package trash;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Trash3 {
+
+	public static void main(String args[])
+	{
+		int nums[] = {10,5, 2,6};
+		
+	
+			 
+		 
+	}
+}
+

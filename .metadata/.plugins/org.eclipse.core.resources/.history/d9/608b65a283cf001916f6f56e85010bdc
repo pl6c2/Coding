@@ -1,0 +1,20 @@
+package trash;
+
+import java.util.ArrayList;
+
+public class Trash1 {
+	
+	
+	public static void main(String args[])
+	{
+		int a[]=new int[5];
+		a[0]=10;
+		System.out.println(a[2]);
+		
+		ArrayList<Integer> a= new ArrayList<Integer>();
+		a.add(1);
+		a.toArray();
+		
+	}
+
+}

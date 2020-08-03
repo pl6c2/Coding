@@ -1,0 +1,22 @@
+package trash;
+
+import java.text.DecimalFormat;
+
+public class Trash {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double a=2;
+		int n=5;
+		double by=a/n;
+		//System.out.println(by);
+		int i;
+		System.out.println(i);
+		
+		DecimalFormat _numberFormat= new DecimalFormat("#0.000");
+		System.out.println(_numberFormat.format(by));
+
+	}
+
+}

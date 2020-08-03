@@ -1,0 +1,13 @@
+package com.Strings;
+
+public class Trash {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s1="Bob hit a ball, the hit ball flew far after it was hit";
+		s1.replace(",", " ");
+		
+	}
+
+}

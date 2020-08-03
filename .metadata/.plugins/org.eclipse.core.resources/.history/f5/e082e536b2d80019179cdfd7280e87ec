@@ -1,0 +1,23 @@
+package com.Strings;
+
+public class Trash {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s1="Bob hit a ball, the hit ball flew far after it was hit";
+		
+		String[] a=s1.split(" ");
+		System.out.println(a[0]+ " "+ a[1]);
+		if(a[0] == a[1])
+		{
+			
+		}
+		else
+		{
+			System.out.println("not equal");
+		}
+
+	}
+
+}

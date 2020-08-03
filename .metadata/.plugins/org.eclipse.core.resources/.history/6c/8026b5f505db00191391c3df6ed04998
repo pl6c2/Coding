@@ -1,0 +1,15 @@
+package com.Strings;
+
+public class Trash {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s1="Bob. hIt, baLl";
+		
+		System.out.println(s1[0]);
+		
+		
+	}
+
+}

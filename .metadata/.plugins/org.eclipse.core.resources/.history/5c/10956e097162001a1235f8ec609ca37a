@@ -1,0 +1,31 @@
+package trash;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Trash3 {
+
+	public static void main(String args[])
+	{
+		String s="Hello";
+		StringBuilder b=new StringBuilder();
+		for(int i=0;i<s.length();i++)
+		{
+			if((int)s.charAt(i)>=65 && (int)s.charAt(i)<=90)
+			{
+				int k=(int)s.charAt(i)+ 32;
+				b.append((char)k);
+			}
+			else
+			{
+				b.append(s.charAt(i));
+			}
+		}
+		
+		
+		System.out.println(b);
+			 
+		 
+	}
+}
+

@@ -1,0 +1,20 @@
+package com.trash;
+
+public class Trash {
+	
+	static void beautifulDays() {
+	     
+		if(1)
+		{
+			System.out.println("IDF");
+			break;
+		}
+
+	    }
+
+	public static void main(String[] args) {
+		beautifulDays();
+
+	}
+
+}

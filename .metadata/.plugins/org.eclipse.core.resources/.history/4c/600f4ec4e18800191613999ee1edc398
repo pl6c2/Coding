@@ -1,0 +1,34 @@
+package com.acm;
+
+public class ACMTeam {
+	
+	void acmTeam(String topics[])
+	{
+		int count=0, maxvalue=0;
+		for(int i=0;i<topics.length;i++)
+		{
+			for(int j=i+1;j<topics.length-1;j++)
+			{
+				for(int k=0;k<topics[i].length();k++)
+				{
+					if(topics[i].charAt(k) == topics[i].charAt(k)))
+				}
+			}
+		}
+	}
+
+	public static void main(String args[])
+	{
+		ACMTeam t=new ACMTeam();
+		String[] topics = new String[4];
+		topics[0]="10101";
+		topics[1]="11100";
+		topics[2]="11010";
+		topics[3]="00101";
+		
+		t.acmTeam(topics);
+		
+		
+		
+	}
+}

@@ -1,0 +1,16 @@
+package com.appendAnddelete;
+
+public class AppendAndDelete {
+	
+	public String appendAnddelete() 
+	{
+		return null;
+		
+	}
+
+	public static void main(String args[]) 
+	{
+		AppendAndDelete a= new AppendAndDelete();
+		a.appendAnddelete();
+	}
+}

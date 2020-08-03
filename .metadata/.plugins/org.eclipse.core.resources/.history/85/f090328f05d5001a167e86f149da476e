@@ -1,0 +1,11 @@
+package com.arrays;
+
+public class TwoSum {
+
+	public static void main(String[] args) {
+		
+		int[] a= {2,5,1,4,7,8};
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package trash;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Trash3 {
+
+	public static void main(String args[])
+	{
+		String s="ababcbacadefegdehijhklij";
+		int[] alpha=new int[26];
+		for(int i=0;i<s.length();i++)
+		{
+			alpha[s.charAt(i)-'a']=i; 
+		}
+		
+		int left=0, right=0;
+		while(right<s.length())
+		{
+			right=alpha[s.charAt(left)-'a'];
+		}
+	
+			 
+		 
+	}
+}
+

@@ -1,0 +1,37 @@
+package com.nithin;
+
+public class Kaprekar {
+	
+	public void showKaprekar(int p, int q)
+	{
+		for(int i=p;i<=q; i++)
+        {
+            int d=0, sum=0;
+            while(i>0)
+            {
+                i=i/10;
+                d=d+1;
+            }
+            System.out.println(d);
+//            i=p;
+//            while(i>0)
+//            {
+//                int a= i%(int)Math.pow(10, d); 
+//                sum= sum+a;
+//                i= i/(int)Math.pow(10, d);
+//            }
+//            if(sum==p)
+//            {
+//               System.out.println(sum);
+//            }
+        }
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Kaprekar k=new Kaprekar();
+		k.showKaprekar(1,10);
+
+	}
+
+}

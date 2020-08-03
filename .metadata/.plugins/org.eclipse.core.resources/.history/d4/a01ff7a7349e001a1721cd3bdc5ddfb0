@@ -1,0 +1,20 @@
+package com.tika;
+
+import org.apache.tika.Tika;
+import org.apache.tika.language.LanguageIdentifier;
+import org.apache.tika.language.detect.LanguageDetector;
+
+public class TikaDemo {
+
+	public static void main(String[] args) {
+		
+		
+		Tika t=new Tika();
+		System.out.println(t.detect("abc"));
+		
+		System.out.println(t.translate("home", "en", "fr"));
+		
+
+	}
+
+}

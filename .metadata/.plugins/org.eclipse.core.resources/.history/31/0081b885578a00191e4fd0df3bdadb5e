@@ -1,0 +1,17 @@
+package com.nithin;
+
+public class Kaprekar {
+	
+	public void showKaprekar()
+	{
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Kaprekar k=new Kaprekar();
+		k.showKaprekar();
+
+	}
+
+}

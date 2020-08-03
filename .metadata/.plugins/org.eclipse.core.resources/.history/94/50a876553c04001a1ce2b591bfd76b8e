@@ -1,0 +1,16 @@
+package prisoner;
+
+
+public class SavePrisoner {
+	
+	public static void main(String args[])
+	{
+//		BigInteger m=BigInteger.valueOf(54);
+//		BigInteger n=BigInteger.valueOf(54);
+		int m=352926151;
+		int n=380324688;
+		System.out.println((94730870-1)+(n%m));
+		
+	}
+
+}

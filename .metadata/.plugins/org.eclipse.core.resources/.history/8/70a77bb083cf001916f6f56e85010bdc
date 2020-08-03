@@ -1,0 +1,21 @@
+package trash;
+
+import java.util.ArrayList;
+
+public class Trash1 {
+	
+	
+	public static void main(String args[])
+	{
+		int a[];
+		a = new int[2];
+		a[0]=1;
+		a= new int[4];
+		a[1]=2;
+		System.out.println(a);
+		
+		
+		
+	}
+
+}

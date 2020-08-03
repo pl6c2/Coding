@@ -1,0 +1,17 @@
+package com.trash;
+
+public class Trash {
+	
+	static String beautifulDays() {
+		return null;
+	     
+		
+         
+	}
+	public static void main(String[] args) {
+		
+		System.out.println(beautifulDays());
+	}
+		
+
+}

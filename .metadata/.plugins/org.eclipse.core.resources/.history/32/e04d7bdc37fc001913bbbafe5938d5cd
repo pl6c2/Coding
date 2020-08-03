@@ -1,0 +1,21 @@
+package com.trash;
+
+public class Trash {
+	
+	static void beautifulDays(String[] grid) {
+	     
+		for(int i=0;i<grid.length;i++)
+		{
+			System.out.println(grid[i]);
+		}
+         
+	}
+	public static void main(String[] args) {
+		
+		String[] grid= {"prem","123","1234"};
+		System.out.println();
+		beautifulDays(grid);
+	}
+		
+
+}

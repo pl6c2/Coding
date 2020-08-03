@@ -1,0 +1,25 @@
+package com.Strings;
+
+public class BinaryToDecimal {
+	
+	public void binaryTodecimal(String a)
+	{
+		for(int i=a.length();i>0;i++)
+		{
+			int c=Integer.parseInt(a[i].toString(), 10);
+		}
+	}
+	
+	
+	public void decimalTobinary(String b)
+	{
+		
+	}
+	
+	public static void main(String args[])
+	{
+		BinaryToDecimal o=new BinaryToDecimal();
+		o.binaryTodecimal("111");
+	}
+
+}

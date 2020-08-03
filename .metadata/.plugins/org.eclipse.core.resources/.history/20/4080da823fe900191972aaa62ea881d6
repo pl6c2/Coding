@@ -1,0 +1,21 @@
+package com.dynamicProgramming;
+
+public class Fibonacci {
+
+	public int fibo(int n)
+	{
+		int result=0;
+		int lookup[]=new int[n+1];
+		if(lookup[0] == null)
+		{
+			
+		}
+		return result;
+	}
+	
+	public static void main(String args[])
+	{
+		Fibonacci f=new Fibonacci();
+		f.fibo(4);
+	}
+}

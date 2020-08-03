@@ -1,0 +1,20 @@
+package com.arrays;
+
+public class TwoSum {
+	
+	public static void twoSum()
+	{
+		
+	}
+
+	public static void main(String[] args) {
+		
+		int[] a= {2,5,1,4,7,8};
+		int target=5;
+		twoSum();
+		
+		
+
+	}
+
+}

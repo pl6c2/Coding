@@ -1,0 +1,24 @@
+package com.trash;
+
+public class Trash {
+	
+	static void beautifulDays(String[] grid) {
+		
+		char[][] a=new char[grid.length][grid.length];     
+		for(int i=0;i<grid.length;i++)
+		{
+			for(int j=0;j<grid.length;j++)
+			{
+				a[i][j]=grid[0];
+			}
+		}
+         
+	}
+	public static void main(String[] args) {
+		
+		String[] grid= {"prem","123","1234"};
+		beautifulDays(grid);
+	}
+		
+
+}

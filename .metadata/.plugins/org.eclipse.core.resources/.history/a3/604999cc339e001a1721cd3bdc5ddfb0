@@ -1,0 +1,18 @@
+package com.tika;
+
+import org.apache.tika.Tika;
+import org.apache.tika.language.LanguageIdentifier;
+import org.apache.tika.language.detect.LanguageDetector;
+
+public class TikaDemo {
+
+	public static void main(String[] args) {
+		
+		LanguageDetector l=new LanguageDetector();
+		Tika t=new Tika();
+		
+		
+
+	}
+
+}

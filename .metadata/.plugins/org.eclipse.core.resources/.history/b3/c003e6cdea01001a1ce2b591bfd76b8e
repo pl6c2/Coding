@@ -1,0 +1,85 @@
+package conversion;
+
+public class TimeConversion {
+
+	public static void main(String args[])
+	{
+		String s="12:45:54PM",s4="";
+		int n=0;
+		char[] ar=s.toCharArray();
+		
+		if(ar[8]=='P')
+		{
+			String s1=String.valueOf(ar[0]);
+			String s2=String.valueOf(ar[1]);
+			String s3=s1.concat(s2);
+			
+			int a=Integer.parseInt(String.valueOf(s3));
+			System.out.println(a);
+			if(a==12)
+			{
+				n=12;
+				for(int i=2;i<ar.length-2;i++)
+				{
+				    s4=s4.concat(String.valueOf(ar[i]));
+				}
+				System.out.println(s4);
+				String s5=String.valueOf(n)+""+s4;
+				System.out.println(s5);
+			}
+			else
+			{
+			n=a+12;
+			System.out.println(n);
+			for(int i=2;i<ar.length-2;i++)
+			{
+			    s4=s4.concat(String.valueOf(ar[i]));
+			}
+			System.out.println(s4);
+			String s5=String.valueOf(n)+""+s4;
+			System.out.println(s5);
+			}
+			
+			
+		}
+		
+		else
+		{
+			String s1=String.valueOf(ar[0]);
+			String s2=String.valueOf(ar[1]);
+			String s3=s1.concat(s2);
+			int a=Integer.parseInt(String.valueOf(s3));
+			if(a==12)
+			{
+				n=0;
+				for(int i=2;i<ar.length-2;i++)
+				{
+				    s4=s4.concat(String.valueOf(ar[i]));
+				}
+				String s5=String.valueOf(n)+"0"+s4;
+				System.out.println(s5);
+			}
+			else
+			{
+				n=a;
+				for(int i=2;i<ar.length-2;i++)
+				{
+				    s4=s4.concat(String.valueOf(ar[i]));
+				}
+				if(n<10)
+				{
+				String s5="0"+String.valueOf(n)+s4;
+				System.out.println(s5);
+				}
+				else
+				{
+					String s5=String.valueOf(n)+s4;
+					System.out.println(s5);
+				}
+			}
+			
+		}
+		
+		
+	}
+}

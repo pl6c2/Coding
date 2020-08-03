@@ -1,0 +1,13 @@
+package com.tika;
+
+public class TikaDemo {
+
+	public static void main(String[] args) {
+		
+		LanguageIdentifier identifier = new LanguageIdentifier("Hello, this is javatpoint.");  
+        String language = identifier.getLanguage();  
+        System.out.println("Language code is : " + language);
+
+	}
+
+}

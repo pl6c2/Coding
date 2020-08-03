@@ -1,0 +1,16 @@
+package com.Strings;
+
+public class BinaryToDecimal {
+	
+	public void binaryTodecimal()
+	{
+		
+	}
+	
+	
+	public static void main(String args[])
+	{
+		
+	}
+
+}

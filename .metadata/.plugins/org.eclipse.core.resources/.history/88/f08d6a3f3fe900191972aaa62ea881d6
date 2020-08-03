@@ -1,0 +1,16 @@
+package com.dynamicProgramming;
+
+public class Fibonacci {
+
+	public int fibo(int n)
+	{
+		int result=0;
+		return result;
+	}
+	
+	public static void main(String args[])
+	{
+		Fibonacci f=new Fibonacci();
+		f.fibo(4)
+	}
+}

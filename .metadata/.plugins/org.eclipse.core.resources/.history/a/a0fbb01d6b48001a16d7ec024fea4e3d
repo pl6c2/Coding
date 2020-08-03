@@ -1,0 +1,11 @@
+package com.Arrays;
+
+public class ThreeSum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<List<Integer>> l=new LinkedList<>();
+
+	}
+
+}

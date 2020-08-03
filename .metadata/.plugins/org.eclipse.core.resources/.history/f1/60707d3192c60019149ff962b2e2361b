@@ -1,0 +1,36 @@
+package trash;
+
+import java.text.DecimalFormat;
+
+class Tr 
+{
+	void funtr()
+	{
+		System.out.println("In parent");
+	}
+}
+
+public class Trash extends Tr{
+	int i;
+	public void base()
+	{
+		System.out.println("base class");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double a=2;
+		int n=5;
+		double by=a/n;
+		//System.out.println(by);
+		
+		System.out.println(new Trash().i);
+//		DecimalFormat _numberFormat= new DecimalFormat("#0.000");
+//		System.out.println(_numberFormat.format(by));
+
+	}
+
+}
+
+

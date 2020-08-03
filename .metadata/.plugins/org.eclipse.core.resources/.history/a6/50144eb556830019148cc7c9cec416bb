@@ -1,0 +1,16 @@
+package com.appendAnddelete;
+
+public class AppendAndDelete {
+	
+	public String appendAnddelete(String s, String t, int k) 
+	{
+		return null;
+		
+	}
+
+	public static void main(String args[]) 
+	{
+		AppendAndDelete a= new AppendAndDelete();
+		a.appendAnddelete("hackerhappy", "hackerrank", 9);
+	}
+}

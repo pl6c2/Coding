@@ -1,0 +1,15 @@
+package com.twitterProducer;
+
+public class TwitterProducer {
+	
+	TwitterProducer()
+	{
+		
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Hello");
+
+	}
+
+}

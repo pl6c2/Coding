@@ -1,0 +1,33 @@
+package trash;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Trash3 {
+
+	public static void main(String args[])
+	{
+		int nums[] = {10,5, 2,6};
+		int k=100, count=0;
+		int start=0, end=0, prod=1;
+		while(end<nums.length && start<nums.length)
+		{
+			prod = prod *  nums[end];
+			if(prod<k)
+			{
+				count=count+ (end-start) + 1;
+				end++;
+			}
+			else
+			{
+				prod=prod/nums[start];
+				start++;
+			}
+			
+		}
+	System.out.println(count);
+			 
+		 
+	}
+}
+

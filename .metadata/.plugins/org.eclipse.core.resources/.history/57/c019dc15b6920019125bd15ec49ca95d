@@ -1,0 +1,40 @@
+package com.halloweensale;
+
+public class HaloweenSale {
+	
+	public int halloweensale(int p, int d, int m, int s)
+	{
+		int count=0;
+        while(s>=m)
+        {
+            if(count==0)
+            {
+                s=s-p;
+                count= count+1;
+            }
+            else
+            {
+                p=p-d;
+                if(p>0)
+                {
+                   s=Math.abs(s-p);
+                   count=count+1;
+                }
+                else
+                {
+                    break;
+                }
+               
+            }
+        }
+
+        return count;
+
+    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

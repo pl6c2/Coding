@@ -1,0 +1,39 @@
+package com.Arrays;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
+public class ThreeSum {
+
+	public static void main(String[] args) {
+			
+		List<List<Integer>> l=new LinkedList<>();
+		List<Integer> a=new LinkedList<Integer>();
+		int[] nums= {-1, 0, 1, 2, -1, -4};
+		Arrays.sort(nums);
+		for(int i=0;i<nums.length-2;i++)
+		{
+			int left=i+1,right=nums.length-1;
+			while(left<right)
+			{
+				if(nums[i]+ nums[left]+nums[right]==0)
+				{
+					if(!l.containsAll(Arrays.asList(nums[i],nums[left])))
+					{
+						l.add(Arrays.asList(nums[i],nums[left],nums[right]) );
+					}
+					 else if (nums[i] + nums[left] + nums[right] < 0) 
+		                    left++; 
+		  
+		                else
+		                    right--; 
+					
+				}
+			}
+			
+			System.out.println(l.get(0));
+		}
+	}
+
+}

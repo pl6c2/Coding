@@ -1,0 +1,66 @@
+package com.twitterProducer;
+
+import java.util.List;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+
+import com.google.common.collect.Lists;
+import com.twitter.hbc.ClientBuilder;
+import com.twitter.hbc.core.Client;
+import com.twitter.hbc.core.Constants;
+import com.twitter.hbc.core.Hosts;
+import com.twitter.hbc.core.HttpHosts;
+import com.twitter.hbc.core.endpoint.StatusesFilterEndpoint;
+import com.twitter.hbc.core.processor.StringDelimitedProcessor;
+import com.twitter.hbc.httpclient.auth.Authentication;
+import com.twitter.hbc.httpclient.auth.OAuth1;
+
+public class TwitterProducer {
+	
+	public TwitterProducer(){}
+
+	public static void main(String[] args) {
+		System.out.println("Hello");
+		new TwitterProducer().run();
+
+	}
+	
+	public void run()
+	{
+		BlockingQueue<String> msgQueue = new LinkedBlockingQueue<String>(100000);
+		Client client =createtwitterClient(msgQueue);
+		// Attempts to establish a connection.
+		client.connect();
+
+	}
+	
+	public Client createtwitterClient(BlockingQueue<String> msgQueue)
+	{
+		
+		
+		Hosts hosebirdHosts = new HttpHosts(Constants.STREAM_HOST);
+		StatusesFilterEndpoint hosebirdEndpoint = new StatusesFilterEndpoint();
+		// Optional: set up some followings and track terms
+//		List<Long> followings = Lists.newArrayList(1234L, 566788L);
+		List<String> terms = Lists.newArrayList("kafka");
+//		hosebirdEndpoint.followings(followings);
+		hosebirdEndpoint.trackTerms(terms);
+
+		// These secrets should be read from a config file
+		Authentication hosebirdAuth = new OAuth1("187ztf3hxmT3Nm3YonFzcAvEB", "hTqPaSjNXw21GXmPCey6CZBCZRoO1EbTkbVO4zMv77kN8Ikq0P", "2219941182hJEd5re1y7lbZmVlyZySZvVsJf88fP6um3SsC3r", "BntHym97rzCisKS3BFXqrBgQbgokklZEBcqHXixGJQtX8");
+		
+		
+		ClientBuilder builder = new ClientBuilder()
+				  .name("Hosebird-Client-01")                              // optional: mainly for the logs
+				  .hosts(hosebirdHosts)
+				  .authentication(hosebirdAuth)
+				  .endpoint(hosebirdEndpoint)
+				  .processor(new StringDelimitedProcessor(msgQueue)); 
+
+				Client hosebirdClient = builder.build();
+				return hosebirdClient;
+				
+				
+	}
+
+}

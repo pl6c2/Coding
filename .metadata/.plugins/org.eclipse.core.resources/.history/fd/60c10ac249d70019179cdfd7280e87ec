@@ -1,0 +1,29 @@
+package com.Strings;
+
+public class MostCommonWord {
+
+	public static void main(String args[])
+	{
+		String s1="Bob hit a ball, the hit BALL flew far after it was hit";
+		int count=1;
+		int maxcount=1;
+		String[] a=s1.split(" ");
+		
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=i+1;j<a.length;j++)
+			{
+				if(a[i].equals(a[j]))
+				{
+					count++;
+					if(count>maxcount)
+					{
+						maxcount=count;
+					}
+				}
+			}
+			System.out.println(a[i]);
+		}
+		
+	}
+}

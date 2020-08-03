@@ -1,0 +1,43 @@
+package com.Trees;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class LevelOrderTraversal {
+
+	public static void main(String[] args) {
+		
+		 Node n; 
+		 n=new Node(1);
+		 n.left = new Node(2); 
+		 n.right = new Node(3); 
+	     n.left.left = new Node(4); 
+	     n.left.right = new Node(5);
+		
+		Queue<Node> q=new LinkedList<Node>();
+		Node temp=n;
+		q.add(temp);
+		int maxelement=0;
+		while(!q.isEmpty())
+		{
+//			temp=q.poll();
+			if(temp.data > maxelement)
+			{
+				maxelement=temp.data;
+			}
+			System.out.println(temp.data);
+			if(temp.left!=null)
+			{
+				q.add(temp.left);
+			}
+			if(temp.right!=null)
+			{
+				q.add(temp.right);
+			}
+			temp=q.poll();
+		}
+		System.out.println("Max Element"+ maxelement);
+ 
+	}
+
+}
